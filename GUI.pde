@@ -152,7 +152,7 @@ void mouseDragged() // executed when the mouse is dragged (while mouse buttom pr
   }  
 
 void mouseWheel(MouseEvent event) { // reads mouse wheel and uses to zoom
-  float s = event.getAmount();
+  float s = event.getCount();
   P.scaleAllAroundCentroid(s/100);
   change=true;
   }
